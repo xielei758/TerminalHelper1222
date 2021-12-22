@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cleaner_Tool_Sep</class>
+ <widget class="QMainWindow" name="Cleaner_Tool_Sep">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>875</width>
+     <height>715</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>875</width>
+     <height>715</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="sub_cleaner_total_layout">
+      <item>
+       <layout class="QVBoxLayout" name="cleaner_in_progress_top_group_w_pgb">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetFixedSize</enum>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="cleaner_in_progress_top_group">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetFixedSize</enum>
+          </property>
+          <item>
+           <spacer name="cleaner_in_progress_padding_spacer_left_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cleaner_in_progress_icon_placeholder">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>81</width>
+              <height>81</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>81</width>
+              <height>81</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="cleaner_in_progress_padding_spacer_left">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="cleaner_in_progress_cleanProgress">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>470</width>
+              <height>112</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>112</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Noto Mono</family>
+              <pointsize>18</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(51, 51, 51);</string>
+            </property>
+            <property name="text">
+             <string>扫描文件中...马上就好，请稍等片刻！</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="cleaner_in_progress_padding_spacer_right2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="cleaner_in_progress_padding_spacer_right">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cleaner_in_progress_btn_nowClean">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>10</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>220</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	background-color: rgb(124,166,82);
+}
+QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+}
+QPushButton {
+	font-size:20pt; color: rgb(255, 255, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>全面清理</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="cleaner_in_progress_padding_spacer_right_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="cleaner_in_progress_pgsBar">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="value">
+           <number>24</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QScrollArea" name="cleaner_in_progress_scroll_basis">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="cleaner_in_progress_filler_widget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>871</width>
+           <height>579</height>
+          </rect>
+         </property>
+         <widget class="QWidget" name="verticalLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>-1</x>
+            <y>-1</y>
+            <width>871</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="cleaner_in_progress_result_display">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

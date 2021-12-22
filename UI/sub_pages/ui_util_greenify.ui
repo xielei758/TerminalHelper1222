@@ -1,0 +1,3510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Greenify</class>
+ <widget class="QMainWindow" name="Greenify">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {background: transparent; }
+QToolTip {
+	color: #ffffff;
+	background-color: rgba(27, 29, 35, 160);
+	border: 1px solid rgb(40, 40, 40);
+	border-radius: 2px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(132, 110, 160), stop:1 rgb(55, 80, 110));</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="util_greenify_stackpages">
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <widget class="QWidget" name="util_greenify_stack_gnome">
+       <widget class="QLabel" name="util_greenify_stack_gnome_prompt_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>自动锁定与节能♻️</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_gnome_prompt_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>开启长时间未使用则设备自动息屏、自动锁定与自动睡眠的功能来防止电脑在未经授权的情况下被他人访问。同时，更短的亮屏时间能够节省能源，为地球生态作出贡献。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_gnome_prompt_temp">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>550</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Gnome</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="gnome_lock_afterblank_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="gnome_lock_afterblank_layout">
+           <item>
+            <widget class="QLabel" name="gnome_lock_afterblank_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>息屏后延时锁定账户</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="gnome_lock_afterblank_pacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="gnome_lock_afterblank_combo_enable">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>功能开启</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>功能禁用</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="gnome_lock_afterblank_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>立刻</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30秒</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1小时</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="gnome_lock_afterblank_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>在显示器关闭后，自动锁定电脑当前登入的账户。您当前打开的文档不会因此丢失。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="gnome_auto_suspend_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="gnome_auto_suspend_layout">
+           <item>
+            <widget class="QLabel" name="gnome_auto_suspend_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动睡眠</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="gnome_auto_suspend_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="gnome_auto_suspend_combo_enable">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>功能开启</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>功能禁用</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="gnome_auto_suspend_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>15分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>25分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>45分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1小时</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>80分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>90分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>100分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2小时</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="gnome_auto_suspend_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>长期未使用电脑时，使其自动睡眠以减少能源消耗。您当前打开的文档不会因此丢失。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="util_greenify_stack_gnome_prompt_go2_ukui_temp">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>544</y>
+          <width>89</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:11pt; color: rgb(255, 255, 255);
+	background-color: rgb(54,183,235);
+}</string>
+        </property>
+        <property name="text">
+         <string>to UKUI</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="gnome_autoblank_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="gnome_autoblank_layout">
+           <item>
+            <widget class="QLabel" name="gnome_autoblank_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动息屏</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="gnome_autoblank_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="gnome_autoblank_combobox_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="gnome_autoblank_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果您在一段时间内未使用电脑，则自动关闭显示器。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>400</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="gnome_autolock_on_suspend_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="gnome_autolock_on_suspend_layout">
+           <item>
+            <widget class="QLabel" name="gnome_autolock_on_suspend_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>手动睡眠时锁定账户</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="gnome_autolock_on_suspend_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="gnome_autolock_on_suspend_combo_enable">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>功能开启</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>功能禁用</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="gnome_autolock_on_suspend_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>当用户在电源选项中选择睡眠时，电脑将会自动锁定当前登入的账户。您当前打开的文档不会因此丢失。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="util_greenify_stack_gnome_prompt_go2_mate_temp">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>544</y>
+          <width>89</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:11pt; color: rgb(255, 255, 255);
+	background-color: rgb(54,183,235);
+}</string>
+        </property>
+        <property name="text">
+         <string>to MATE</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_gnome_apply_confirm">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>500</y>
+          <width>689</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+        </property>
+        <property name="text">
+         <string>在您完成选择后，本页面的设置会自动应用至系统而无需额外进行确认。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="util_greenify_stack_ukui">
+       <widget class="QLabel" name="util_greenify_stack_ukui_prompt_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>自动锁定与节能♻️</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_ukui_prompt_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>开启长时间未使用则设备自动息屏、自动锁定与自动睡眠的功能来防止电脑在未经授权的情况下被他人访问。同时，更短的亮屏时间能够节省能源，为地球生态作出贡献。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_ukui_prompt_temp">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>550</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>UKUI</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="ukui_display_time_count_on_lock_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="ukui_display_time_count_on_lock_layout">
+           <item>
+            <widget class="QLabel" name="ukui_display_time_count_on_lock_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>锁屏界面显示休息时长</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="ukui_display_time_count_on_lock_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ukui_display_time_count_on_lock_combo_enable">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>功能开启</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>功能禁用</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="ukui_display_time_count_on_lock_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>开启此功能后，在锁屏界面上会显示电脑已经处于锁定状态的时间。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="ukui_custom_power_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="ukui_custom_powe_layout">
+           <item>
+            <widget class="QLabel" name="ukui_custom_power_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自定义电源模式</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="ukui_custom_power_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ukui_custom_power_combo_enable">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>功能开启</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>功能禁用</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="ukui_custom_power_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果用户希望更改电脑的自动锁屏与自动睡眠时长，需要首先开启自定义电源模式。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="ukui_autoblank_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="ukui_autoblank_layout">
+           <item>
+            <widget class="QLabel" name="ukui_autoblank_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动息屏</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="ukui_autoblank_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ukui_autoblank_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>120分钟</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="ukui_autoblank_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果您在一段时间内未使用电脑，则自动关闭显示器。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>400</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="ukui_auto_suspend_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="ukui_auto_suspend_layout">
+           <item>
+            <widget class="QLabel" name="ukui_auto_suspend_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动睡眠</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="ukui_auto_suspend_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="ukui_auto_suspend_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>120分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>300分钟</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="ukui_auto_suspend_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>长期未使用电脑时，使其自动睡眠以减少能源消耗。您当前打开的文档不会因此丢失。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_ukui_apply_confirm">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>510</y>
+          <width>689</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+        </property>
+        <property name="text">
+         <string>在您完成选择后，本页面的设置会自动应用至系统而无需额外进行确认。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="util_greenify_stack_mate">
+       <widget class="QLabel" name="util_greenify_stack_mate_prompt_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>开启长时间未使用则设备自动息屏、自动锁定与自动睡眠的功能来防止电脑在未经授权的情况下被他人访问。同时，更短的亮屏时间能够节省能源，为地球生态作出贡献。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_mate_prompt_temp">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>550</y>
+          <width>101</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>MATE</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_mate_prompt_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>自动锁定与节能♻️</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="mate_autoblank_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="mate_autoblank_layout">
+           <item>
+            <widget class="QLabel" name="mate_autoblank_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动息屏</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="mate_autoblank_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="mate_autoblank_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="mate_autoblank_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果您在一段时间内未使用电脑，则自动关闭显示器。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="mate_auto_suspend_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="mate_auto_suspend_layout">
+           <item>
+            <widget class="QLabel" name="mate_auto_suspend_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动睡眠</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="mate_auto_suspend_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="mate_auto_suspend_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>120分钟</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="mate_auto_suspend_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>长期未使用电脑时，使其自动睡眠以减少能源消耗。您当前打开的文档不会因此丢失。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_11">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="mate_power_btn_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="mate_power_btn_layout">
+           <item>
+            <widget class="QLabel" name="mate_power_btn_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>按下电源键时</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="mate_power_btn_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="mate_power_btn_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>105</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>询问操作</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>睡眠</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>关机</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>无处理</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="mate_power_btn_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>在您按下电脑主机上的电源按键时，电脑会按照您当前的设定执行操作。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_mate_apply_confirm">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>500</y>
+          <width>689</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+        </property>
+        <property name="text">
+         <string>在您完成选择后，本页面的设置会自动应用至系统而无需额外进行确认。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="util_greenify_stack_uos">
+       <widget class="QLabel" name="util_greenify_stack_uos_prompt_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>自动锁定与节能♻️</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_uos_prompt_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>开启长时间未使用则设备自动息屏、自动锁定与自动睡眠的功能来防止电脑在未经授权的情况下被他人访问。同时，更短的亮屏时间能够节省能源，为地球生态作出贡献。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_12">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="uos_power_btn_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="uos_power_btn_layout">
+           <item>
+            <widget class="QLabel" name="uos_power_btn_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>按下电源键时</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="uos_power_btn_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="uos_power_btn_combo_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>105</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>105</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>关机</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>待机</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>休眠</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>关闭显示器</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>无任何操作</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="uos_power_btn_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>在您按下电脑主机上的电源按键时，电脑会按照您当前的设定执行操作。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_13">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="uos_autoblank_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="uos_autoblank_layout">
+           <item>
+            <widget class="QLabel" name="uos_autoblank_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动息屏</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="uos_autoblank_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="uos_autoblank_combobox_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="uos_autoblank_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果您在一段时间内未使用电脑，则自动关闭显示器。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_14">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="uos_autolock_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="uos_autolock_layout">
+           <item>
+            <widget class="QLabel" name="uos_autolock_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动锁定</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="uos_autolock_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="uos_autolock_combobox_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="uos_autolock_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果您在一段时间内未使用电脑，则自动锁定电脑。您已经打开的文档不会受到影响。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_15">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>400</y>
+          <width>691</width>
+          <height>70</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="uos_autosleep_layout_with_tip" stretch="6,1">
+         <item>
+          <layout class="QHBoxLayout" name="uos_autosleep_layout">
+           <item>
+            <widget class="QLabel" name="uos_autosleep_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>自动待机</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="uos_autosleep_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="uos_autosleep_combobox_setting">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>90</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>1分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>30分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>60分钟</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>从不</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="uos_autosleep_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>如果您在一段时间内未使用电脑，电脑会在设定的时间内自动进入待机状态以减少能量消耗。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_uos_apply_confirm">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>510</y>
+          <width>689</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+        </property>
+        <property name="text">
+         <string>在您完成选择后，本页面的设置会自动应用至系统而无需额外进行确认。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="util_greenify_stack_others">
+       <widget class="QLabel" name="util_greenify_stack_other_label">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>190</y>
+          <width>671</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>很抱歉。当前使用的系统环境尚未适配节电优能小程序。
+如果要更改相关的设置，我们建议您打开系统自带的设置界面进行相应调整。</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_other_prompt_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>自动锁定与节能♻️</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_other_prompt_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>开启长时间未使用则设备自动息屏、自动锁定与自动睡眠的功能来防止电脑在未经授权的情况下被他人访问。同时，更短的亮屏时间能够节省能源，为地球生态作出贡献。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="util_greenify_stack_other_push_btn">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>340</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	font-size:11pt; color: rgb(255, 255, 255);
+	background-color: rgb(54,183,235);
+}</string>
+        </property>
+        <property name="text">
+         <string>打开系统设置</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_greenify_stack_other_push_btn_prompt">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>390</y>
+          <width>689</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+        </property>
+        <property name="text">
+         <string>点击此按钮以启动系统设置页面。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+*.idea
+files_rc.py
+#UI/ui_main.py
+#UI/sub_pages/*.py
+UI/ui_blank4resource.py
+UI/archived/
+UI/images/
+Utils/Constant_Repo/archived/
+Logic/archived/
+__pycache__
+*/__pycache__
+.DS_Store
+.vscode
+arc/
+

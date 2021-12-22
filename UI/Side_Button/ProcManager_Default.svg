@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118.72" height="128" viewBox="0 0 118.72 128">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="路径_2073" data-name="路径 2073" d="M55.414-22.513h-37.2c-2.962,0-5.492-2.231-5.492-4.818s2.543-4.818,5.492-4.818h37.2c2.962,0,5.492,2.231,5.492,4.818s-2.529,4.818-5.492,4.818" transform="translate(-12.723 32.149)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="路径_2079" data-name="路径 2079" d="M11.526-22.65a4.818,4.818,0,0,1-4.818-4.636,5.151,5.151,0,0,1,4.818-5,4.9,4.9,0,0,1,4.818,5,4.585,4.585,0,0,1-4.818,4.636" transform="translate(-6.708 32.287)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="路径_2075" data-name="路径 2075" d="M55.414-13.515h-37.2c-2.962,0-5.492-2.231-5.492-4.818s2.543-4.818,5.492-4.818h37.2c2.962,0,5.492,2.231,5.492,4.818s-2.53,4.818-5.492,4.818" transform="translate(-12.723 23.152)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="路径_2081" data-name="路径 2081" d="M11.335-13.653a4.893,4.893,0,0,1-4.627-5,4.843,4.843,0,0,1,4.627-4.636,4.924,4.924,0,0,1,5.009,4.636,4.987,4.987,0,0,1-5.009,5" transform="translate(-6.708 23.289)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="路径_2077" data-name="路径 2077" d="M55.414-4.384h-37.2c-2.962,0-5.492-2.231-5.492-4.818s2.543-4.818,5.492-4.818h37.2c2.962,0,5.492,2.231,5.492,4.818s-2.53,4.818-5.492,4.818" transform="translate(-12.723 14.021)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="路径_2083" data-name="路径 2083" d="M11.335-4.522a4.893,4.893,0,0,1-4.627-5,4.843,4.843,0,0,1,4.627-4.636,4.924,4.924,0,0,1,5.009,4.636,4.987,4.987,0,0,1-5.009,5" transform="translate(-6.708 14.158)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="进程管理128px_默认状态_" data-name="进程管理128px（默认状态）" transform="translate(-33 -230)">
+    <g id="矩形_674" data-name="矩形 674" transform="translate(33 230)" fill="none" stroke="#fff" stroke-width="10">
+      <rect width="118.72" height="128" rx="2" stroke="none"/>
+      <rect x="5" y="5" width="108.72" height="118" rx="3" fill="none"/>
+    </g>
+    <g id="组_3185" data-name="组 3185" transform="translate(58.476 261.89)">
+      <g id="组_3182" data-name="组 3182">
+        <g id="组_3176" data-name="组 3176" transform="translate(18.495)" clip-path="url(#clip-path)">
+          <path id="路径_2072" data-name="路径 2072" d="M7.723-37.149H87.386V-3.422H7.723Z" transform="translate(-23.464 25.104)" fill="#fff"/>
+        </g>
+        <g id="组_3179" data-name="组 3179" clip-path="url(#clip-path-2)">
+          <path id="路径_2078" data-name="路径 2078" d="M1.708-37.287H35.436V-3.559H1.708Z" transform="translate(-13.754 25.241)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="组_3183" data-name="组 3183" transform="translate(0 25.697)">
+        <g id="组_3177" data-name="组 3177" transform="translate(18.495)" clip-path="url(#clip-path-3)">
+          <path id="路径_2074" data-name="路径 2074" d="M7.723-28.152H87.386V5.576H7.723Z" transform="translate(-23.464 16.106)" fill="#fff"/>
+        </g>
+        <g id="组_3180" data-name="组 3180" clip-path="url(#clip-path-4)">
+          <path id="路径_2080" data-name="路径 2080" d="M1.708-28.289H35.436V5.439H1.708Z" transform="translate(-13.754 16.243)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="组_3184" data-name="组 3184" transform="translate(0 51.395)">
+        <g id="组_3178" data-name="组 3178" transform="translate(18.495)" clip-path="url(#clip-path-5)">
+          <path id="路径_2076" data-name="路径 2076" d="M7.723-19.021H87.386V14.707H7.723Z" transform="translate(-23.464 6.975)" fill="#fff"/>
+        </g>
+        <g id="组_3181" data-name="组 3181" clip-path="url(#clip-path-6)">
+          <path id="路径_2082" data-name="路径 2082" d="M1.708-19.158H35.436V14.569H1.708Z" transform="translate(-13.754 7.113)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

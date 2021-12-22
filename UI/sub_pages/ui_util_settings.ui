@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GenSettings</class>
+ <widget class="QMainWindow" name="GenSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(132, 110, 160), stop:1 rgb(55, 80, 110));
+
+color: rgb(255, 255, 255); </string>
+   </property>
+   <widget class="QStackedWidget" name="settings_stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>791</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent; </string>
+    </property>
+    <widget class="QWidget" name="page_main">
+     <widget class="QLabel" name="settings_avai_header">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>411</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Mono</family>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Noto Mono&quot;;</string>
+      </property>
+      <property name="text">
+       <string>蓝狐 - 设置</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="ProcessManager_tab">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>781</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <stylestrategy>PreferAntialias</stylestrategy>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane {
+    border: 2px solid rgba(102, 138, 210, 120);
+    border-radius:8px;
+    background: transparent;
+}
+
+QTabWidget::tab-bar:top {
+    top: 2px;
+    left:8px;
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 8px;
+}
+
+QTabWidget::tab-bar:left {
+    right: 8px;
+}
+
+QTabWidget::tab-bar:right {
+    left: 8px;
+}
+
+QTabBar::tab {
+    border: 2px solid rgb(81, 85, 133);
+    background: rgb(255, 255, 255); 
+    width: 90 px;
+    font-size : 18px;
+}
+
+QTabBar::tab:selected {
+    background: rgba(255, 255, 255, 170);
+    color: rgb(81, 85, 133);
+    font-weight: bold; 
+    border-bottom-color: none;
+    margin-bottom: -2px; 
+}
+
+QTabBar::tab:!selected {
+    background: rgba(157, 128, 173, 220);
+    color:rgba(255, 255, 255, 165);
+}
+
+QTabBar::tab:!selected:hover {
+    background: rgba(208, 176, 255, 160);
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 8px;
+    margin-right: -1px;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 8ex;
+    margin-bottom: -1px;
+    padding: 10px 5px 10px 5px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="process_list_tab">
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color = rgb(255, 255, 255);</string>
+       </property>
+       <attribute name="title">
+        <string>页面一</string>
+       </attribute>
+       <widget class="QLabel" name="settings_avai_dev_prog">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>761</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;</string>
+        </property>
+        <property name="text">
+         <string>待开发。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="settings_theme_changing_test">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>89</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>换皮测试</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="network_list_tab">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <attribute name="title">
+        <string>页面二</string>
+       </attribute>
+       <widget class="QTableView" name="net_table_view">
+        <property name="geometry">
+         <rect>
+          <x>5</x>
+          <y>1</y>
+          <width>841</width>
+          <height>631</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="settings_avai_dev_prog_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>761</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;</string>
+        </property>
+        <property name="text">
+         <string>待开发。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

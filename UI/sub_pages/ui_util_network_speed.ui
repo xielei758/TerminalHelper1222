@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpeedTest</class>
+ <widget class="QMainWindow" name="SpeedTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {background: transparent; }
+QToolTip {
+	color: #ffffff;
+	background-color: rgba(27, 29, 35, 160);
+	border: 1px solid rgb(40, 40, 40);
+	border-radius: 2px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(132, 110, 160), stop:1 rgb(55, 80, 110));</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="util_network_spd_stacked">
+      <property name="font">
+       <font>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <widget class="QWidget" name="welcome_page">
+       <property name="font">
+        <font>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
+       <widget class="QLabel" name="util_network_speed_prompt_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>网络测试🌐</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_network_speed_prompt_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>使用本工具轻松地测试当前主机的网络性能。
+您的网络暂时出现了问题？别紧张！我们会帮助您向维护人员上报故障。</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>440</y>
+          <width>411</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="network_spd_duration_threshold_controller">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="network_spd_duration_threshold_prompt_left">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>网络测试时长设定为</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="network_spd_duration_combo">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    /* background: white; */
+    background: rgb(239, 239, 239);
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>10</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>15</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>25</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>35</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>50</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>75</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>100</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>120</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="network_spd_duration_threshold_prompt_right">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>秒</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="network_spd_duration_controller_spacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>160</y>
+          <width>631</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="network_spd_main_group_layout">
+         <item>
+          <widget class="QPushButton" name="network_spd_icon_placeholder">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>230</width>
+             <height>230</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="network_spd_main_btn_ver_group" stretch="11,0">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="network_spd_main_btn_hor">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="network_spd_main_hor_spacer_left">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="network_spd_main_btn_tiggerTest">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>250</width>
+                 <height>90</height>
+                </size>
+               </property>
+               <property name="baseSize">
+                <size>
+                 <width>0</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>20</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+	background-color: rgb(124,166,82);
+}
+QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+}
+QPushButton {
+	font-size:20pt; color: rgb(255, 255, 255);
+}</string>
+               </property>
+               <property name="text">
+                <string>启动测试</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="network_spd_main_hor_spacer_right">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="network_spd_main_btn_prompt">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+             </property>
+             <property name="text">
+              <string>在开始测试前，我们建议您关闭其余的网络应用。</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="on_going_test_page">
+       <property name="font">
+        <font>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>300</y>
+          <width>801</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="util_network_speed_flow_canvas">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="util_network_speed_on_going_subheader">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>761</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>尝试与网络测试伺服进行联络...</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_network_speed_on_going_header">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>411</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>18</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>尝试发起连接，请稍候</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>160</y>
+          <width>581</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="util_network_speed_on_going_downspd_group">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="util_network_speed_on_going_downspd_hor">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="util_network_speed_on_going_downspd_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>39</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Mono</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>下行速度：</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="util_network_speed_on_going_downspd_value">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>39</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Mono</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>测试中</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="util_network_speed_on_going_downspd_horizontal_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::MinimumExpanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>50</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="util_network_speed_on_going_downspd_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>下行速度决定您从网络获取数据的速度。测试速度越大，则您下载内容、拉取文件的速度越快。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>230</y>
+          <width>581</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="util_network_speed_on_going_upspd_group">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="util_network_speed_on_going_upspd_hor">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="util_network_speed_on_going_upspd_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>39</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Mono</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>上行速度：</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="util_network_speed_on_going_upspd_value">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>39</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Mono</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>测试中</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="util_network_speed_on_going_upspd_horizontal_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::MinimumExpanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>50</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="util_network_speed_on_going_upspd_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>上行速度决定您向网络发送数据的速度。测试速度越大，则您发送内容、分享文件的速度越快。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>581</width>
+          <height>63</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="util_network_speed_on_going_latency_group">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="util_network_speed_on_going_latency_hor">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="util_network_speed_on_going_latency_prompt">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>39</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Mono</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>网络延迟：</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="util_network_speed_on_going_latency_value">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>39</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Noto Mono</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>测试中</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="util_network_speed_on_going_latency_horizontal_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::MinimumExpanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>50</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="util_network_speed_on_going_latency_tip">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Noto Mono</family>
+             <pointsize>10</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+           </property>
+           <property name="text">
+            <string>网络延迟决定您的网络请求发送至目标服务器所用的时间。网络延迟越低，打开网页越快。</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="util_network_speed_on_going_upspd_comment">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>230</y>
+          <width>521</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>接近于100M宽带</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_network_speed_on_going_downspd_comment">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>160</y>
+          <width>521</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>接近于100M宽带</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="util_network_speed_on_going_latency_comment">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>90</y>
+          <width>521</width>
+          <height>39</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Noto Mono</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>延迟理想</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="network_automatical_repair">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>390</y>
+          <width>200</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(124,166,82);
+}
+QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+}
+QPushButton {
+	font-size:16pt; color: rgb(255, 255, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>启动自动诊断</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

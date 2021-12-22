@@ -1,0 +1,3457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Wanderson M. Pimenta</author>
+ <class>AppStoreGen</class>
+ <widget class="QMainWindow" name="AppStoreGen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1080</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1080</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1080</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>66</red>
+        <green>73</green>
+        <blue>90</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>55</red>
+        <green>61</green>
+        <blue>75</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>29</red>
+        <green>32</green>
+        <blue>40</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>44</red>
+        <green>49</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>66</red>
+        <green>73</green>
+        <blue>90</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>55</red>
+        <green>61</green>
+        <blue>75</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>29</red>
+        <green>32</green>
+        <blue>40</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>44</red>
+        <green>49</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>66</red>
+        <green>73</green>
+        <blue>90</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>55</red>
+        <green>61</green>
+        <blue>75</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>29</red>
+        <green>32</green>
+        <blue>40</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>22</red>
+        <green>24</green>
+        <blue>30</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="0">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>51</red>
+        <green>153</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>44</red>
+        <green>49</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>44</red>
+        <green>49</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>210</red>
+        <green>210</green>
+        <blue>210</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>10</pointsize>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background: transparent; 
+}
+QToolTip {
+	color: #ffffff;
+	background-color: rgba(27, 29, 35, 160);
+	border: 1px solid rgb(40, 40, 40);
+	border-radius: 2px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;
+color: rgb(230, 230, 230); </string>
+   </property>
+   <layout class="QHBoxLayout" name="Central_Widget_hor">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_main">
+      <property name="font">
+       <font>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* LINE EDIT */
+QLineEdit {
+	background-color: rgb(157,128,173);
+	border-radius: 5px;
+	border: 2px solid rgb(27, 29, 35);
+	padding-left: 10px;
+}
+QLineEdit:hover {
+	border: 2px solid rgb(64, 71, 88);
+}
+QLineEdit:focus {
+	border: 2px solid rgb(91, 101, 124);
+}
+
+/* SCROLL BARS */
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 14px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+QScrollBar::handle:horizontal {
+    background: rgb(85, 170, 255);
+    min-width: 25px;
+	border-radius: 7px
+}
+QScrollBar::add-line:horizontal {
+    border: none;
+    background: rgb(55, 63, 77);
+    width: 20px;
+	border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+    border: none;
+    background: rgb(55, 63, 77);
+    width: 20px;
+	border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+     background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+     background: none;
+}
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 14px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+ QScrollBar::handle:vertical {	
+	background: rgb(85, 170, 255);
+    min-height: 25px;
+	border-radius: 7px
+ }
+ QScrollBar::add-line:vertical {
+     border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:vertical {
+	border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background: none;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+/* CHECKBOX */
+QCheckBox::indicator {
+    border: 3px solid rgb(52, 59, 72);
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+    background: rgb(44, 49, 60);
+}
+QCheckBox::indicator:hover {
+    border: 3px solid rgb(58, 66, 81);
+}
+QCheckBox::indicator:checked {
+    background: 3px solid rgb(52, 59, 72);
+	border: 3px solid rgb(52, 59, 72);	
+	background-image: url(:/16x16/icons/16x16/cil-check-alt.png);
+}
+
+/* RADIO BUTTON */
+QRadioButton::indicator {
+    border: 3px solid rgb(52, 59, 72);
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+    background: rgb(44, 49, 60);
+}
+QRadioButton::indicator:hover {
+    border: 3px solid rgb(58, 66, 81);
+}
+QRadioButton::indicator:checked {
+    background: 3px solid rgb(94, 106, 130);
+	border: 3px solid rgb(52, 59, 72);	
+}
+
+/* COMBOBOX */
+QComboBox{
+	background-color: rgb(27, 29, 35);
+	border-radius: 5px;
+	border: 2px solid rgb(27, 29, 35);
+	padding: 5px;
+	padding-left: 10px;
+}
+QComboBox:hover{
+	border: 2px solid rgb(64, 71, 88);
+}
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 25px; 
+	border-left-width: 3px;
+	border-left-color: rgba(39, 44, 54, 150);
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;	
+	background-image: ;
+	background-position: center;
+	background-repeat: no-reperat;
+ }
+QComboBox QAbstractItemView {
+	color: rgb(85, 170, 255);	
+	background-color: rgb(27, 29, 35);
+	padding: 10px;
+	selection-background-color: rgb(39, 44, 54);
+}
+
+/* SLIDERS */
+QSlider::groove:horizontal {
+    border-radius: 9px;
+    height: 18px;
+	margin: 0px;
+	background-color: rgb(52, 59, 72);
+}
+QSlider::groove:horizontal:hover {
+	background-color: rgb(55, 62, 76);
+}
+QSlider::handle:horizontal {
+    background-color: rgb(85, 170, 255);
+    border: none;
+    height: 18px;
+    width: 18px;
+    margin: 0px;
+	border-radius: 9px;
+}
+QSlider::handle:horizontal:hover {
+    background-color: rgb(105, 180, 255);
+}
+QSlider::handle:horizontal:pressed {
+    background-color: rgb(65, 130, 195);
+}
+
+QSlider::groove:vertical {
+    border-radius: 9px;
+    width: 18px;
+    margin: 0px;
+	background-color: rgb(52, 59, 72);
+}
+QSlider::groove:vertical:hover {
+	background-color: rgb(55, 62, 76);
+}
+QSlider::handle:vertical {
+    background-color: rgb(85, 170, 255);
+	border: none;
+    height: 18px;
+    width: 18px;
+    margin: 0px;
+	border-radius: 9px;
+}
+QSlider::handle:vertical:hover {
+    background-color: rgb(105, 180, 255);
+}
+QSlider::handle:vertical:pressed {
+    background-color: rgb(65, 130, 195);
+}
+
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_center">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(139, 128, 173), stop: 1 rgb(81, 110, 133));</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_left_menu">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>165</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>165</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>1</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_menus">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="layout_menus">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="btn_App_Name_Container_top_padding">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>15</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>15</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background: transparent; </string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_App_Name_Container">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>55</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	
+	background-position: center;
+	background-repeat: no-reperat;
+	border: none;
+
+background: transparent;
+
+
+font: 16pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	background-color: rgb(85, 85, 85);
+}
+QPushButton:pressed {	
+	background-color: rgb(90, 175, 255);
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>蓝狐应用商店</string>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_App_Name_Container_title">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>28</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	
+	background-position: center;
+	background-repeat: no-reperat;
+	border: none;
+
+background: transparent;
+
+
+font: 16pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);
+}
+QPushButton:hover {
+	background-color: rgb(85, 85, 85);
+}
+QPushButton:pressed {	
+	background-color: rgb(90, 175, 255);
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string>标题处</string>
+                  </property>
+                  <property name="flat">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="btn_App_Name_Container_bottom_padding">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>15</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>15</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background: transparent; </string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_toggle_Main">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>90</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-position: left;
+	background-repeat: no-reperat;
+	background: transparent; 
+	border: 0;  
+	font: 14pt &quot;Noto Mono&quot;;
+	color: rgb(255, 255, 255);
+	/* padding-left: 15px; */
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 135, 200);
+}
+
+QPushButton:pressed {	
+	background-color: rgb(118, 99, 136);
+}
+
+QPushButton:checked{
+	background-color: rgb(118, 99, 136);
+	/* background-color: rgba(255, 255, 255, 150); */
+	/* color: rgb(118, 99, 136);  */
+	border: none;
+	font-weight: bold; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>首页</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_toggle_All">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>90</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-position: left;
+	background-repeat: no-reperat;
+	background: transparent; 
+	border: 0;  
+	font: 14pt &quot;Noto Mono&quot;;
+	color: rgb(255, 255, 255);
+	/* padding-left: 15px; */
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 135, 200);
+}
+
+QPushButton:pressed {	
+	background-color: rgb(118, 99, 136);
+}
+
+QPushButton:checked{
+	background-color: rgb(118, 99, 136);
+	/* background-color: rgba(255, 255, 255, 150); */
+	/* color: rgb(118, 99, 136);  */
+	border: none;
+	font-weight: bold; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>全部</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_toggle_Update">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>90</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-position: left;
+	background-repeat: no-reperat;
+	background: transparent; 
+	border: 0;  
+	font: 14pt &quot;Noto Mono&quot;;
+	color: rgb(255, 255, 255);
+	/* padding-left: 15px; */
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 135, 200);
+}
+
+QPushButton:pressed {	
+	background-color: rgb(118, 99, 136);
+}
+
+QPushButton:checked{
+	background-color: rgb(118, 99, 136);
+	/* background-color: rgba(255, 255, 255, 150); */
+	/* color: rgb(118, 99, 136);  */
+	border: none;
+	font-weight: bold; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>升级</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_toggle_Uninstall">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>90</height>
+                   </size>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {
+	background-position: left;
+	background-repeat: no-reperat;
+	background: transparent; 
+	border: 0;  
+	font: 14pt &quot;Noto Mono&quot;;
+	color: rgb(255, 255, 255);
+	/* padding-left: 15px; */
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 135, 200);
+}
+
+QPushButton:pressed {	
+	background-color: rgb(118, 99, 136);
+}
+
+QPushButton:checked{
+	background-color: rgb(118, 99, 136);
+	/* background-color: rgba(255, 255, 255, 150); */
+	/* color: rgb(118, 99, 136);  */
+	border: none;
+	font-weight: bold; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>卸载</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_extra_menus">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="layout_menu_bottom">
+                <property name="spacing">
+                 <number>10</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>25</number>
+                </property>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_content_right">
+            <property name="font">
+             <font>
+              <stylestrategy>PreferAntialias</stylestrategy>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(132, 110, 160), stop:1 rgb(55, 80, 110));</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_content">
+               <property name="font">
+                <font>
+                 <stylestrategy>PreferAntialias</stylestrategy>
+                </font>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="search_bar_top_padding">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>24</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>26</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background: transparent; </string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="content_top_bar_hor_layout" stretch="1,6">
+                  <item>
+                   <layout class="QHBoxLayout" name="content_top_bar_hor_return_btn" stretch="1,5">
+                    <item>
+                     <widget class="QPushButton" name="search_bar_return_btn">
+                      <property name="minimumSize">
+                       <size>
+                        <width>80</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>80</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">/* border: 3px solid rgba(255, 255, 255, 180); */
+border-radius: 6px;
+font: 12pt &quot;Noto Mono&quot;;
+font-weight: bold; 
+padding-left: 6px;
+padding-top: 2px;
+padding-right: 6px;
+padding-bottom: 2px;</string>
+                      </property>
+                      <property name="text">
+                       <string>&lt;返回</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="return_btn_hor_spacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="content_top_bar_hor_search">
+                    <item>
+                     <spacer name="search_bar_hor_spacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="search_bar_edit">
+                      <property name="minimumSize">
+                       <size>
+                        <width>395</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>395</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Noto Mono</family>
+                        <pointsize>12</pointsize>
+                        <weight>75</weight>
+                        <italic>false</italic>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLineEdit{
+	/* background-color: rgba(255, 255, 255, 200);
+	color: rgba(0, 0, 0, 170);  */
+	border: 3px solid rgba(255, 255, 255, 130);
+	border-radius: 8px;
+	background: transparent;
+	font: 12pt &quot;Noto Mono&quot;;
+	color: rgba(255, 255, 255, 180); 
+	font-weight: bold; 
+}
+
+QLineEdit:hover {
+	border: 3px solid rgba(255, 255, 255, 220);
+	color: rgba(255, 255, 255, 230); 
+}</string>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="maxLength">
+                       <number>50</number>
+                      </property>
+                      <property name="placeholderText">
+                       <string>在此进行搜索...</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="search_bar_middle_padding">
+                      <property name="minimumSize">
+                       <size>
+                        <width>15</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>15</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background: transparent; </string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="search_bar_trigger_btn">
+                      <property name="minimumSize">
+                       <size>
+                        <width>80</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>80</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">/* border: 3px solid rgba(255, 255, 255, 180); */
+border-radius: 6px;
+font: 12pt &quot;Noto Mono&quot;;
+font-weight: bold; 
+padding-left: 6px;
+padding-top: 2px;
+padding-right: 6px;
+padding-bottom: 2px;</string>
+                      </property>
+                      <property name="text">
+                       <string>🔍搜索</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QStackedWidget" name="AppStore_stackedWidget">
+                  <property name="font">
+                   <font>
+                    <stylestrategy>PreferAntialias</stylestrategy>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background: transparent;</string>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="page_home">
+                   <widget class="QWidget" name="horizontalLayoutWidget_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>20</y>
+                      <width>711</width>
+                      <height>271</height>
+                     </rect>
+                    </property>
+                    <layout class="QHBoxLayout" name="page_home_banner_main_hor">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="page_home_banner_main_content">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>267</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>中心banner</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="verticalLayoutWidget_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>719</x>
+                      <y>19</y>
+                      <width>181</width>
+                      <height>271</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="page_home_banner_main_ver">
+                     <property name="spacing">
+                      <number>5</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="page_home_banner_prev_1">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>62</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>侧边banner_1</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="page_home_banner_prev_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>62</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>侧边banner_2</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="page_home_banner_prev_3">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>62</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>侧边banner_3</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="page_home_banner_prev_4">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>62</height>
+                        </size>
+                       </property>
+                       <property name="text">
+                        <string>侧边banner_4</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QTabWidget" name="page_home_tab_view_on_apps">
+                    <property name="geometry">
+                     <rect>
+                      <x>6</x>
+                      <y>299</y>
+                      <width>701</width>
+                      <height>331</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QTabWidget::pane {
+    border: none;
+    /* border: 2px solid rgba(102, 138, 210, 120); */
+    /* border-radius:8px; */
+    background: transparent;
+}
+
+QTabWidget::tab-bar:top {
+    /* top: 2px; */
+    /* left:2px; */
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 6px;
+}
+
+QTabWidget::tab-bar:left {
+    /* right: 6px; */
+    /* left: 6 px;  */
+}
+
+QTabWidget::tab-bar:right {
+    /* left: 6px; */
+    /* right: 6 px; */
+}
+
+QTabBar::tab {
+    /* border: none; */
+    border: 4px solid rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255); 
+    /* width: 50 px; */
+    height: 16px;
+    font-size : 16px;
+    padding-left: 8 px; 
+    padding-right: 8 px;
+		width: 80px;
+}
+
+QTabBar::tab:selected {
+    background: transparent; 
+    /* background: rgba(255, 255, 255, 170); */
+    color: rgb(46, 60, 218);
+    /* color: rgb(81, 85, 133); */
+    font-weight: bold; 
+    border-bottom-color: rgb(46, 60, 218);
+    /* margin-bottom: -2px;  */
+}
+
+QTabBar::tab:!selected {
+    background: transparent;
+    color: rgba(255, 255, 255, 170);
+    padding-bottom: 6px; 
+    /* color: rgba(51, 51, 51, 180); */
+    /* color: rgba(128, 128, 128, 180); */
+    /* margin-bottom: -2px; */
+}
+
+QTabBar::tab:!selected:hover {
+    background: #999;
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 12px;
+    margin-right: -1px;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 8ex;
+    margin-bottom: -1px;
+    padding: 10px 5px 10px 5px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="page_home_web">
+                     <attribute name="title">
+                      <string>上网必备</string>
+                     </attribute>
+                     <widget class="QPushButton" name="page_home_app_detail">
+                      <property name="geometry">
+                       <rect>
+                        <x>40</x>
+                        <y>40</y>
+                        <width>131</width>
+                        <height>41</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>App Detail</string>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="page_home_movie">
+                     <attribute name="title">
+                      <string>影音必备</string>
+                     </attribute>
+                    </widget>
+                    <widget class="QWidget" name="page_home_work">
+                     <attribute name="title">
+                      <string>办公必备</string>
+                     </attribute>
+                    </widget>
+                   </widget>
+                   <widget class="QWidget" name="verticalLayoutWidget_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>719</x>
+                      <y>299</y>
+                      <width>181</width>
+                      <height>331</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="page_home_chart">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                    </layout>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="page_all_apps">
+                   <widget class="QTabWidget" name="page_all_apps_view_on_apps">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>10</y>
+                      <width>901</width>
+                      <height>621</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QTabWidget::pane {
+    border: none;
+    /* border: 2px solid rgba(102, 138, 210, 120); */
+    /* border-radius:8px; */
+    background: transparent;
+}
+
+QTabWidget::tab-bar:top {
+    /* top: 2px; */
+    /* left:2px; */
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 6px;
+}
+
+QTabWidget::tab-bar:left {
+    /* right: 6px; */
+    /* left: 6 px;  */
+}
+
+QTabWidget::tab-bar:right {
+    /* left: 6px; */
+    /* right: 6 px; */
+}
+
+QTabBar::tab {
+    /* border: none; */
+    border: 4px solid rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255); 
+    /* width: 50 px; */
+    height: 16px;
+    font-size : 16px;
+    padding-left: 8 px; 
+    padding-right: 8 px;
+		width: 60px;
+}
+
+QTabBar::tab:selected {
+    background: transparent; 
+    /* background: rgba(255, 255, 255, 170); */
+    color: rgb(46, 60, 218);
+    /* color: rgb(81, 85, 133); */
+    font-weight: bold; 
+    border-bottom-color: rgb(46, 60, 218);
+    /* margin-bottom: -2px;  */
+}
+
+QTabBar::tab:!selected {
+    background: transparent;
+    color: rgba(255, 255, 255, 170);
+    padding-bottom: 6px; 
+    /* color: rgba(51, 51, 51, 180); */
+    /* color: rgba(128, 128, 128, 180); */
+    /* margin-bottom: -2px; */
+}
+
+QTabBar::tab:!selected:hover {
+    background: #999;
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 12px;
+    margin-right: -1px;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 8ex;
+    margin-bottom: -1px;
+    padding: 10px 5px 10px 5px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="all_apps_all_tab">
+                     <attribute name="title">
+                      <string>全部</string>
+                     </attribute>
+                     <widget class="QWidget" name="verticalLayoutWidget_5">
+                      <property name="geometry">
+                       <rect>
+                        <x>-1</x>
+                        <y>-1</y>
+                        <width>901</width>
+                        <height>551</height>
+                       </rect>
+                      </property>
+                      <layout class="QVBoxLayout" name="all_apps_vbox_all_tab">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="verticalLayoutWidget_9">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>540</y>
+                        <width>901</width>
+                        <height>41</height>
+                       </rect>
+                      </property>
+                      <layout class="QVBoxLayout" name="all_apps_vbox_navi_tab"/>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="all_apps_browser">
+                     <attribute name="title">
+                      <string>浏览器</string>
+                     </attribute>
+                     <widget class="QWidget" name="verticalLayoutWidget_6">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>901</width>
+                        <height>591</height>
+                       </rect>
+                      </property>
+                      <layout class="QVBoxLayout" name="all_apps_vbox_browser"/>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="all_apps_work">
+                     <attribute name="title">
+                      <string>办公</string>
+                     </attribute>
+                     <widget class="QWidget" name="verticalLayoutWidget_7">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>901</width>
+                        <height>591</height>
+                       </rect>
+                      </property>
+                      <layout class="QVBoxLayout" name="all_apps_vbox_work"/>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="all_apps_entertainment">
+                     <attribute name="title">
+                      <string>娱乐</string>
+                     </attribute>
+                     <widget class="QWidget" name="verticalLayoutWidget_8">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>901</width>
+                        <height>591</height>
+                       </rect>
+                      </property>
+                      <layout class="QVBoxLayout" name="all_apps_vbox_entertainment"/>
+                     </widget>
+                    </widget>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="page_update">
+                   <widget class="QTabWidget" name="page_update_view_on_apps">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>10</y>
+                      <width>901</width>
+                      <height>621</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QTabWidget::pane {
+    border: none;
+    /* border: 2px solid rgba(102, 138, 210, 120); */
+    /* border-radius:8px; */
+    background: transparent;
+}
+
+QTabWidget::tab-bar:top {
+    /* top: 2px; */
+    /* left:2px; */
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 6px;
+}
+
+QTabWidget::tab-bar:left {
+    /* right: 6px; */
+    /* left: 6 px;  */
+}
+
+QTabWidget::tab-bar:right {
+    /* left: 6px; */
+    /* right: 6 px; */
+}
+
+QTabBar::tab {
+    /* border: none; */
+    border: 4px solid rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255); 
+    /* width: 50 px; */
+    height: 16px;
+    font-size : 16px;
+    padding-left: 8 px; 
+    padding-right: 8 px;
+		width: 60px;
+}
+
+QTabBar::tab:selected {
+    background: transparent; 
+    /* background: rgba(255, 255, 255, 170); */
+    color: rgb(46, 60, 218);
+    /* color: rgb(81, 85, 133); */
+    font-weight: bold; 
+    border-bottom-color: rgb(46, 60, 218);
+    /* margin-bottom: -2px;  */
+}
+
+QTabBar::tab:!selected {
+    background: transparent;
+    color: rgba(255, 255, 255, 170);
+    padding-bottom: 6px; 
+    /* color: rgba(51, 51, 51, 180); */
+    /* color: rgba(128, 128, 128, 180); */
+    /* margin-bottom: -2px; */
+}
+
+QTabBar::tab:!selected:hover {
+    background: #999;
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 12px;
+    margin-right: -1px;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 8ex;
+    margin-bottom: -1px;
+    padding: 10px 5px 10px 5px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="update_formal_version_app_view">
+                     <attribute name="title">
+                      <string>正式版</string>
+                     </attribute>
+                    </widget>
+                    <widget class="QWidget" name="update_beta_version_app_view">
+                     <attribute name="title">
+                      <string>测试版</string>
+                     </attribute>
+                    </widget>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="page_uninstall">
+                   <widget class="QTabWidget" name="page_uninstall_view_on_apps">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>10</y>
+                      <width>901</width>
+                      <height>621</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QTabWidget::pane {
+    border: none;
+    /* border: 2px solid rgba(102, 138, 210, 120); */
+    /* border-radius:8px; */
+    background: transparent;
+}
+
+QTabWidget::tab-bar:top {
+    /* top: 2px; */
+    /* left:2px; */
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 6px;
+}
+
+QTabWidget::tab-bar:left {
+    /* right: 6px; */
+    /* left: 6 px;  */
+}
+
+QTabWidget::tab-bar:right {
+    /* left: 6px; */
+    /* right: 6 px; */
+}
+
+QTabBar::tab {
+    /* border: none; */
+    border: 4px solid rgba(255, 255, 255, 0);
+    background: rgb(255, 255, 255); 
+    /* width: 50 px; */
+    height: 16px;
+    font-size : 16px;
+    padding-left: 8 px; 
+    padding-right: 8 px;
+		width: 60px;
+}
+
+QTabBar::tab:selected {
+    background: transparent; 
+    /* background: rgba(255, 255, 255, 170); */
+    color: rgb(46, 60, 218);
+    /* color: rgb(81, 85, 133); */
+    font-weight: bold; 
+    border-bottom-color: rgb(46, 60, 218);
+    /* margin-bottom: -2px;  */
+}
+
+QTabBar::tab:!selected {
+    background: transparent;
+    color: rgba(255, 255, 255, 170);
+    padding-bottom: 6px; 
+    /* color: rgba(51, 51, 51, 180); */
+    /* color: rgba(128, 128, 128, 180); */
+    /* margin-bottom: -2px; */
+}
+
+QTabBar::tab:!selected:hover {
+    background: #999;
+}
+
+QTabBar::tab:top:!selected {
+    margin-top: 3px;
+}
+
+QTabBar::tab:bottom:!selected {
+    margin-bottom: 3px;
+}
+
+QTabBar::tab:top, QTabBar::tab:bottom {
+    min-width: 12px;
+    margin-right: -1px;
+    padding: 5px 10px 5px 10px;
+}
+
+QTabBar::tab:top:selected {
+    border-bottom-color: none;
+}
+
+QTabBar::tab:bottom:selected {
+    border-top-color: none;
+}
+
+QTabBar::tab:top:last, QTabBar::tab:bottom:last,
+QTabBar::tab:top:only-one, QTabBar::tab:bottom:only-one {
+    margin-right: 0;
+}
+
+QTabBar::tab:left:!selected {
+    margin-right: 3px;
+}
+
+QTabBar::tab:right:!selected {
+    margin-left: 3px;
+}
+
+QTabBar::tab:left, QTabBar::tab:right {
+    min-height: 8ex;
+    margin-bottom: -1px;
+    padding: 10px 5px 10px 5px;
+}
+
+QTabBar::tab:left:selected {
+    border-left-color: none;
+}
+
+QTabBar::tab:right:selected {
+    border-right-color: none;
+}
+
+QTabBar::tab:left:last, QTabBar::tab:right:last,
+QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
+    margin-bottom: 0;
+}</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="uninstall_all_app_view">
+                     <attribute name="title">
+                      <string>全部</string>
+                     </attribute>
+                    </widget>
+                    <widget class="QWidget" name="uninstall_recommend_app_view">
+                     <attribute name="title">
+                      <string>  建议卸载  </string>
+                     </attribute>
+                    </widget>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="page_search">
+                   <widget class="QWidget" name="verticalLayoutWidget_4">
+                    <property name="geometry">
+                     <rect>
+                      <x>9</x>
+                      <y>9</y>
+                      <width>891</width>
+                      <height>621</height>
+                     </rect>
+                    </property>
+                    <layout class="QVBoxLayout" name="page_search_result_here">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                    </layout>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="page_app_detail">
+                   <widget class="QPushButton" name="app_detail_icon_placeholder">
+                    <property name="geometry">
+                     <rect>
+                      <x>30</x>
+                      <y>20</y>
+                      <width>141</width>
+                      <height>141</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string>图标</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="app_detail_name_placeholder">
+                    <property name="geometry">
+                     <rect>
+                      <x>196</x>
+                      <y>26</y>
+                      <width>351</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 20pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>软件名称</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="app_detail_ver_num_placeholder">
+                    <property name="geometry">
+                     <rect>
+                      <x>200</x>
+                      <y>80</y>
+                      <width>191</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>软件版本</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="app_detail_size_num_placeholder">
+                    <property name="geometry">
+                     <rect>
+                      <x>420</x>
+                      <y>80</y>
+                      <width>191</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>软件大小</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="app_detail_install_button">
+                    <property name="geometry">
+                     <rect>
+                      <x>630</x>
+                      <y>50</y>
+                      <width>131</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton {
+  font-size:18pt; color: rgb(255, 255, 255);
+	background-color: rgb(1,77,146);
+}
+QPushButton:hover {
+	background-color: rgb(1,106,201);
+}
+QPushButton:pressed {	
+	background-color: rgb(1,54,102);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>现在安装</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="app_detail_promo_pic_placeholder_1">
+                    <property name="geometry">
+                     <rect>
+                      <x>30</x>
+                      <y>170</y>
+                      <width>301</width>
+                      <height>151</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string>展示图片1</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="app_detail_promo_pic_placeholder_2">
+                    <property name="geometry">
+                     <rect>
+                      <x>350</x>
+                      <y>170</y>
+                      <width>301</width>
+                      <height>151</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string>展示图片2</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="app_detail_software_intro_title">
+                    <property name="geometry">
+                     <rect>
+                      <x>40</x>
+                      <y>340</y>
+                      <width>341</width>
+                      <height>21</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 14pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>软件简介</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="app_detail_software_intro_content">
+                    <property name="geometry">
+                     <rect>
+                      <x>40</x>
+                      <y>370</y>
+                      <width>741</width>
+                      <height>211</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。这里是软件简介内容的占位符。</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                    </property>
+                    <property name="wordWrap">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QWidget" name="page_cleaner_tools">
+                   <widget class="QStackedWidget" name="cleaner_page_stackedWidget">
+                    <property name="geometry">
+                     <rect>
+                      <x>-1</x>
+                      <y>-1</y>
+                      <width>861</width>
+                      <height>681</height>
+                     </rect>
+                    </property>
+                    <widget class="QWidget" name="sub_cleaner_page_main">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <widget class="QWidget" name="layoutWidget">
+                      <property name="geometry">
+                       <rect>
+                        <x>20</x>
+                        <y>162</y>
+                        <width>801</width>
+                        <height>261</height>
+                       </rect>
+                      </property>
+                      <layout class="QHBoxLayout" name="cleaner_page_main_group_layout">
+                       <item>
+                        <widget class="QPushButton" name="cleaner_main_icon_placeholder">
+                         <property name="sizePolicy">
+                          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                           <horstretch>0</horstretch>
+                           <verstretch>0</verstretch>
+                          </sizepolicy>
+                         </property>
+                         <property name="minimumSize">
+                          <size>
+                           <width>230</width>
+                           <height>230</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QVBoxLayout" name="cleaner_page_main_btn_ver_group" stretch="10,11,1">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <layout class="QHBoxLayout" name="cleaner_page_main_prompt_hor">
+                           <item>
+                            <spacer name="cleaner_main_prompt_hor_spacer_left">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="cleaner_main_prompt">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 26pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                             </property>
+                             <property name="text">
+                              <string>清理硬盘垃圾，释放电脑性能</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="cleaner_main_prompt_hor_spacer_right">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="cleaner_page_main_btn_hor">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <spacer name="cleaner_main_hor_spacer_left">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="cleaner_main_btn_triggerClean">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>300</width>
+                               <height>90</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>250</width>
+                               <height>90</height>
+                              </size>
+                             </property>
+                             <property name="baseSize">
+                              <size>
+                               <width>0</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>20</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+	background-color: rgb(124,166,82);
+}
+QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+}
+QPushButton {
+	font-size:20pt; color: rgb(255, 255, 255);
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>全面清理</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="cleaner_main_hor_spacer_right">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <spacer name="cleaner_page_main_btn_padding">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>5</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="layoutWidget_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>40</x>
+                        <y>570</y>
+                        <width>467</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <layout class="QHBoxLayout" name="cleaner_page_outd_file_threshold_controller">
+                       <property name="spacing">
+                        <number>6</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="cleaner_page_outd_file_threshold_prompt_left">
+                         <property name="styleSheet">
+                          <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>超过</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="cleaner_page_outd_file_threshold_combo">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>90</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>三天</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>五天</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>半个月</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>一个月</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>三个月</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>半年</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>一年</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="cleaner_page_outd_file_threshold_prompt_right">
+                         <property name="styleSheet">
+                          <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>未访问的文件会被标注为长期未访问文件</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="cleaner_page_outd_controller_spacer">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="layoutWidget">
+                      <property name="geometry">
+                       <rect>
+                        <x>40</x>
+                        <y>520</y>
+                        <width>461</width>
+                        <height>51</height>
+                       </rect>
+                      </property>
+                      <layout class="QHBoxLayout" name="cleaner_page_huge_file_threshold_controller">
+                       <property name="spacing">
+                        <number>6</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="cleaner_page_huge_file_threshold_prompt_left">
+                         <property name="styleSheet">
+                          <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>超过</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QComboBox" name="cleaner_page_huge_file_threshold_combo">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>90</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QComboBox {
+    border: 2px solid rgb(185, 179, 255);
+    border-radius: 8px;
+    padding: 1px 18px 1px 3px;
+		color: rgb(51, 51, 51);
+}
+
+QComboBox:editable {
+    background: rgb(240, 250, 254);
+}
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+		background: white;
+}
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background: white;
+		color: rgb(147, 123, 171);
+		font-weight: bold;
+		/* color: rgb(255, 255, 255); */
+}
+
+QComboBox:!enabled {
+    background: white;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 16px;
+
+    border-left-width: 1px;
+    border-left-color: green;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 6px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}</string>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>50MB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>100MB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>200MB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>500MB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>1GB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>2GB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>5GB</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>10GB</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="cleaner_page_huge_file_threshold_prompt_right">
+                         <property name="styleSheet">
+                          <string notr="true">font: 12pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+                         </property>
+                         <property name="text">
+                          <string>大小的文件会被标注为大型文件</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="cleaner_page_huge_controller_spacer">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QCheckBox" name="cleaner_page_main_sep_enabler">
+                      <property name="geometry">
+                       <rect>
+                        <x>590</x>
+                        <y>432</y>
+                        <width>231</width>
+                        <height>21</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QCheckBox {
+    spacing: 6px;
+    font: 12pt &quot;Noto Mono&quot;;
+    color: rgb(255, 255, 255);
+}
+
+QCheckBox::indicator {
+    border: 3px solid rgba(255, 255, 255, 120);
+    background: none;
+}
+
+QCheckBox::indicator:unchecked {
+    background: none;
+}
+
+QCheckBox::unchecked {
+    color: rgb(255, 255, 255);
+}
+
+QCheckBox::indicator:hover {
+    background: rgb(175,255,94);
+}
+
+QCheckBox::indicator:pressed {
+    background: rgb(80,116,43);
+}
+
+QCheckBox::indicator:checked {
+    background: rgb(132,193,71);
+}</string>
+                      </property>
+                      <property name="text">
+                       <string>在独立窗口中启动扫描页面</string>
+                      </property>
+                     </widget>
+                    </widget>
+                    <widget class="QWidget" name="sub_cleaner_in_progress">
+                     <widget class="QWidget" name="layoutWidget">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>861</width>
+                        <height>681</height>
+                       </rect>
+                      </property>
+                      <layout class="QVBoxLayout" name="sub_cleaner_total_layout">
+                       <item>
+                        <layout class="QVBoxLayout" name="cleaner_in_progress_top_group_w_pgb">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="sizeConstraint">
+                          <enum>QLayout::SetFixedSize</enum>
+                         </property>
+                         <item>
+                          <layout class="QHBoxLayout" name="cleaner_in_progress_top_group">
+                           <property name="spacing">
+                            <number>0</number>
+                           </property>
+                           <property name="sizeConstraint">
+                            <enum>QLayout::SetFixedSize</enum>
+                           </property>
+                           <item>
+                            <spacer name="cleaner_in_progress_padding_spacer_left_2">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="cleaner_in_progress_icon_placeholder">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>81</width>
+                               <height>81</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>81</width>
+                               <height>81</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="cleaner_in_progress_padding_spacer_left">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="cleaner_in_progress_cleanProgress">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>470</width>
+                               <height>112</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>112</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Noto Mono</family>
+                               <pointsize>18</pointsize>
+                               <weight>50</weight>
+                               <italic>false</italic>
+                               <bold>false</bold>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">font: 18pt &quot;Noto Mono&quot;;
+color: rgb(250, 250, 250);</string>
+                             </property>
+                             <property name="text">
+                              <string>扫描文件中...马上就好，请稍等片刻！</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="cleaner_in_progress_padding_spacer_right2">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <spacer name="cleaner_in_progress_padding_spacer_right">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QPushButton" name="cleaner_in_progress_btn_nowClean">
+                             <property name="sizePolicy">
+                              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                               <horstretch>0</horstretch>
+                               <verstretch>0</verstretch>
+                              </sizepolicy>
+                             </property>
+                             <property name="minimumSize">
+                              <size>
+                               <width>180</width>
+                               <height>10</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>220</width>
+                               <height>50</height>
+                              </size>
+                             </property>
+                             <property name="baseSize">
+                              <size>
+                               <width>0</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <pointsize>20</pointsize>
+                              </font>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QPushButton {
+	background-color: rgb(124,166,82);
+}
+QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+}
+QPushButton {
+	font-size:20pt; color: rgb(255, 255, 255);
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>全面清理</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <widget class="QProgressBar" name="cleaner_in_progress_pgsBar">
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>10</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="value">
+                            <number>24</number>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QScrollArea" name="cleaner_in_progress_scroll_basis">
+                         <property name="widgetResizable">
+                          <bool>true</bool>
+                         </property>
+                         <widget class="QWidget" name="cleaner_in_progress_filler_widget">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>857</width>
+                            <height>545</height>
+                           </rect>
+                          </property>
+                          <widget class="QWidget" name="verticalLayoutWidget">
+                           <property name="geometry">
+                            <rect>
+                             <x>-1</x>
+                             <y>-1</y>
+                             <width>861</width>
+                             <height>551</height>
+                            </rect>
+                           </property>
+                           <layout class="QVBoxLayout" name="cleaner_in_progress_result_display">
+                            <property name="spacing">
+                             <number>0</number>
+                            </property>
+                           </layout>
+                          </widget>
+                         </widget>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_grip">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background: transparent; </string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>2</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QFrame" name="frame_label_bottom">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>10</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_credits">
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">/* color: rgb(203, 203, 203); */</string>
+                     </property>
+                     <property name="text">
+                      <string>Alpha version. </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_version">
+                     <property name="maximumSize">
+                      <size>
+                       <width>550</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">/* color: rgb(203, 203, 203); */</string>
+                     </property>
+                     <property name="text">
+                      <string>v1.0.0</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

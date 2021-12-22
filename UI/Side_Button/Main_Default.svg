@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="126.236" height="138" viewBox="0 0 126.236 138">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="路径_2069" data-name="路径 2069" d="M63.771-8.177C63.223-7.629,52.8,4.434,37.45,4.434S11.678-8.177,11.129-8.177a5.3,5.3,0,0,1,.548-7.677c2.193-2.193,5.484-1.645,7.677.548,0,0,8.225,9.322,17.547,9.322s17.547-8.773,17.547-9.322c2.193-2.193,5.483-2.742,7.677-.548s3.29,4.935,1.645,7.677Z" transform="translate(-9.733 17.25)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="首页128px_默认状态_" data-name="首页128px（默认状态）" transform="translate(-125.001 -246)">
+    <path id="路径_2067" data-name="路径 2067" d="M111.091.776,70.408-36.418a16.487,16.487,0,0,0-23.247,0L6.478.776A18.918,18.918,0,0,0,.667,14.143V68.772c0,9.88,7.555,18.016,17.435,18.016H99.467c9.88,0,17.435-8.136,17.435-18.016V14.143A18.918,18.918,0,0,0,111.091.776Z" transform="translate(129.334 292.212)" fill="none" stroke="#fff" stroke-width="10"/>
+    <g id="组_3171" data-name="组 3171" transform="translate(160.371 327.899)" clip-path="url(#clip-path)">
+      <path id="路径_2068" data-name="路径 2068" d="M4.733-22.25h84.74V29.343H4.733Z" transform="translate(-19.688 7.296)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

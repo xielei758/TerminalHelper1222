@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123.916" height="128" viewBox="0 0 123.916 128">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="路径_2113" data-name="路径 2113" d="M62.656-44a32,32,0,0,1,31.68,27.429h5.211A18.286,18.286,0,0,1,117.724-.206l6.793,64A18.286,18.286,0,0,1,106.323,84H18.99A18.286,18.286,0,0,1,.8,63.794L7.6-.206A18.286,18.286,0,0,1,25.774-16.571h5.211A32,32,0,0,1,61.806-43.989Zm0,9.143a22.857,22.857,0,0,0-22.4,18.286h44.8A22.858,22.858,0,0,0,63.395-34.845Z" transform="translate(-0.704 44)" fill="#967ca9"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="路径_2115" data-name="路径 2115" d="M71.185-28.286h0a4.63,4.63,0,0,0-4.63,4.63h0A23.148,23.148,0,0,1,43.407-.508,23.148,23.148,0,0,1,20.259-23.656h0a4.63,4.63,0,0,0-4.63-4.63A4.63,4.63,0,0,0,11-23.657h0A32.407,32.407,0,0,0,43.407,8.75,32.407,32.407,0,0,0,75.814-23.657h0a4.63,4.63,0,0,0-4.629-4.63Z" transform="translate(-11 28.286)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="应用中心128px_点击状态_" data-name="应用中心128px（点击状态）" transform="translate(-0.704 44)">
+    <g id="组_3218" data-name="组 3218" transform="translate(0.704 -44)" clip-path="url(#clip-path)">
+      <path id="路径_2112" data-name="路径 2112" d="M-4.3-49H148.71V108.091H-4.3Z" transform="translate(-10.249 34.455)" fill="#967ca9"/>
+    </g>
+    <g id="组_3219" data-name="组 3219" transform="translate(30.249 1.482)" clip-path="url(#clip-path-2)">
+      <path id="路径_2114" data-name="路径 2114" d="M6-33.286h94.275v66.5H6Z" transform="translate(-20.731 18.555)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

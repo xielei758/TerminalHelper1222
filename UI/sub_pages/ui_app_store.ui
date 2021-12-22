@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AppStore</class>
+ <widget class="QMainWindow" name="AppStore">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>875</width>
+    <height>715</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>875</width>
+    <height>715</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(132, 110, 160), stop:1 rgb(55, 80, 110));
+
+color: rgb(255, 255, 255); </string>
+   </property>
+   <widget class="QStackedWidget" name="AppStore_stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>871</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent; </string>
+    </property>
+    <widget class="QWidget" name="welcome_page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>581</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Noto Mono&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>应用中心页面。（独立子窗口）</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="appstore_header">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>411</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Mono</family>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Noto Mono&quot;;</string>
+      </property>
+      <property name="text">
+       <string>应用中心</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="appstore_subheader">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>731</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Mono</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Noto Mono&quot;;</string>
+      </property>
+      <property name="text">
+       <string>你所钟爱的应用程序，汇集此地。</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

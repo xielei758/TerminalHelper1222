@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DoubleCheckExit</class>
+ <widget class="QMainWindow" name="DoubleCheckExit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(y1: 0, y2: 1, stop: 0 rgb(250, 116, 77), stop:1 rgb(250, 85, 85));
+
+color: rgb(255, 255, 255); </string>
+   </property>
+   <widget class="QStackedWidget" name="DCE_stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>511</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent; </string>
+    </property>
+    <widget class="QWidget" name="main_page">
+     <widget class="QLabel" name="dce_header">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>411</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Mono</family>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Noto Mono&quot;;</string>
+      </property>
+      <property name="text">
+       <string>确定要退出蓝狐吗？</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="main_prompt">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>431</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Noto Mono&quot;;</string>
+      </property>
+      <property name="text">
+       <string>如果您退出蓝狐，这台电脑会失去蓝狐提供的持续保护，存在由不当操作造成系统崩溃的风险。</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="information_prompt">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>160</y>
+        <width>441</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Mono</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;Noto Mono&quot;;
+color: rgba(255, 255, 255, 180);</string>
+      </property>
+      <property name="text">
+       <string>蓝狐能为您的电脑提供各项辅助功能，并能为您的电脑安全保驾护航。
+我们建议您保持蓝狐的持续开启。</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dce_keep_on_btn">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(124,166,82);
+}
+QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+}
+QPushButton {
+	font-size:16pt; color: rgb(255, 255, 255);
+}</string>
+      </property>
+      <property name="text">
+       <string>保持开启</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dce_quit_btn">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>245</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-position: center;
+	background-repeat: no-reperat;
+	border: none;
+	background: transparent;
+	font-size:14pt; color: rgba(255, 255, 255, 200);
+}
+/* QPushButton:hover {
+	background-color: rgb(171,228,113);
+}
+QPushButton:pressed {	
+	background-color: rgb(87,116,57);
+} */</string>
+      </property>
+      <property name="text">
+       <string>确认退出</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
